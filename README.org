@@ -1,0 +1,4 @@
+#+TITLE: nomsg
+#+AUTHOR: Mac Radigan
+
+ # *EOF* 

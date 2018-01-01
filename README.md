@@ -1,2 +1,0 @@
-# nomsg
-NoMSG
