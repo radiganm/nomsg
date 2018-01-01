@@ -31,10 +31,11 @@ namespace rad::nomsg {
   { 
     assert(size > sizeof(nomsg_type_t));
     nomsg_type_t result;
+    std::size_t offset = 0;
     const char *pchar = reinterpret_cast<const char *>(buffer);
     // detect EDN, JSON, and S-expressions 
-    if (infer_type(*pchar, result))   return result;
-    else while( ' ' == *(++pchar)) 
+    if (infer_type(pchar[offset], result))   return result;
+    else while( offset < size && ' ' == pchar[++offset]) 
       if (infer_type(*pchar, result)) return result;
     // detect cookie
     const nomsg_type_t &type = *reinterpret_cast<const nomsg_type_t * const>(buffer);
