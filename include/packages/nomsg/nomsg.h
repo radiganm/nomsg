@@ -24,7 +24,7 @@ namespace rad::nomsg {
     NOMSG__TYPE_FILE        = 0x46494c45, // FILE - ordinary file
     NOMSG__TYPE_INTERROBANG = 0x233f2121, // #?!! - interrobang script
     NOMSG__TYPE_EDN         = 0x45444e30, // EDN0 - Extensible Data Notation (EDN)
-    NOMSG__TYPE_SEXP        = 0x53455850, // SEXP - s-expressions
+    NOMSG__TYPE_SEXP        = 0x53455850, // SEXP - S-expressions
     NOMSG__TYPE_LISP        = 0x4c495350, // LISP - lisp code
     NOMSG__TYPE_STL         = 0x53544c30, // STL0 - Standard Tessellation Language (STL) "stereolithography"
     NOMSG__TYPE_WAV         = 0x57415630, // WAV0 - Wave Format

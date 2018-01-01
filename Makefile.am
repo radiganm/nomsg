@@ -26,12 +26,14 @@ test_nomsg_LDADD           = $(nomsg_ldadd)
 
 lib_LTLIBRARIES            = libnomsg.la                                        
 
-libnomsg_la_SOURCES        = src/packages/nomsg/nomsg.cc
+libnomsg_la_SOURCES        = src/packages/nomsg/nomsg.cc                       \
+                             src/packages/nomsg/NomsgParser.cc
 libnomsg_la_LIBADD         = -L/usr/lib/x86_64-linux-gnu -lrt
 libnomsg_la_LDFLAGS        = -export-symbols-regex '^nomsg_[^_]' -fPIC         \
                              -shared -pthread                                  \
                              -L/usr/lib/x86_64-linux-gnu -lrt                   
 
-pkginclude_HEADERS         = include/packages/nomsg/nomsg.h
+pkginclude_HEADERS         = include/packages/nomsg/nomsg.h                    \
+                             include/packages/nomsg/NomsgParser.h
 
 ## *EOF*

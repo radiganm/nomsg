@@ -38,7 +38,7 @@ namespace rad::nomsg {
         os << "type: interrobang script";
         break;
       case rad::nomsg::NOMSG__TYPE_SEXP:
-        os << "type: s-expression";
+        os << "type: S-expression";
         break;
       case rad::nomsg::NOMSG__TYPE_LISP:
         os << "type: lisp code";
