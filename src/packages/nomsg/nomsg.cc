@@ -46,6 +46,21 @@ namespace rad::nomsg {
       case rad::nomsg::NOMSG__TYPE_STL:
         os << "type: Standard Tesselation Language";
         break;
+      case rad::nomsg::NOMSG__TYPE_WAV:
+        os << "type: Wave Format";
+        break;
+      case rad::nomsg::NOMSG__TYPE_MP3:
+        os << "type: MP3 Format";
+        break;
+      case rad::nomsg::NOMSG__TYPE_MIDI:
+        os << "type: MIDI";
+        break;
+      case rad::nomsg::NOMSG__TYPE_BLUE:
+        os << "type: MIDAS BLUE";
+        break;
+      case rad::nomsg::NOMSG__TYPE_GREY:
+        os << "type: Xinx-Midas GREY";
+        break;
       case rad::nomsg::NOMSG__TYPE_JSON:
         os << "type: JavaScript Array Object Notation";
         break;

@@ -27,6 +27,11 @@ namespace rad::nomsg {
     NOMSG__TYPE_SEXP        = 0x53455850, // SEXP - s-expressions
     NOMSG__TYPE_LISP        = 0x4c495350, // LISP - lisp code
     NOMSG__TYPE_STL         = 0x53544c30, // STL0 - Standard Tessellation Language (STL) "stereolithography"
+    NOMSG__TYPE_WAV         = 0x57415630, // WAV0 - Wave Format
+    NOMSG__TYPE_MP3         = 0x4d503330, // MP3 - MP3 Format
+    NOMSG__TYPE_MIDI        = 0x4d494449, // MIDI - MIDI
+    NOMSG__TYPE_BLUE        = 0x424c5545, // BLUE - MIDAS BLUE Format
+    NOMSG__TYPE_GREY        = 0x47524559, // GREY - Xinx-Midas GREY Format
     NOMSG__TYPE_JSON        = 0x4a534f4e, // JSON - JavaScript Array Object Notation (JSON)
     NOMSG__TYPE_AVRO        = 0x4156524f, // AVRO - Apache Avro
     NOMSG__TYPE_GOOG        = 0x474f4f47  // GOOD - Google serialization
